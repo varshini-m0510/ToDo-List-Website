@@ -1,0 +1,292 @@
+.home-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    margin: auto;
+}
+
+.new-task-btn{
+    padding: 10px;
+    display: flex;
+    margin: 5px;
+    gap: 10px;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgb(42, 233, 207);
+    border: 0;
+    color: whitesmoke;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.new-task-btn:active{
+    transform: scale(0.95);
+}
+
+.header-logo-text{
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(42, 233, 207);
+    padding-bottom: 13px;
+    line-height: 0%;
+}
+
+header{
+    padding: 10px 0;
+}
+
+.btn-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.new-task-btn{
+    outline-color: rgb(12, 73, 178)
+}
+
+.new-task-btn:hover{
+    border: 1.5px solid rgb(12, 73, 178);
+}
+
+.search-bar{
+    display: block;   
+    padding: 15px;
+    width: 97%;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 0;
+    border: 1px solid gainsboro;
+    outline-color: rgb(12, 73, 178);
+    transition: all 0.3s ease-in-out;
+}
+
+.search-icon{
+    color: rgba(72, 71, 71, 0.886);
+    position: absolute;
+    right: 30px;
+    background-color: white ;
+    top: 119px;
+    display: flex;
+    border-radius: 20px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 2px;
+}
+
+.search-container{
+    width: 100%;
+    margin: 3px auto;
+}
+
+.filter-container{
+    display: flex;
+    width: 97%;
+    margin-top: 30px; 
+    margin-left: 20px;
+    justify-content: start;
+    border: 0;
+}
+
+.filter-btn-container{
+    flex: 1;
+}
+
+.filter-btn-container > button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 15px;
+    background-color: white;
+    border: 0;
+}
+
+.filter-btn-container > button:hover{
+    border: 2px solid rgb(12, 73, 178);
+    border-radius: 20px;
+}
+
+.filter-btn-container > .active-filter{
+    background-color: rgb(12, 73, 178);
+    color: white;
+    border-radius: 15px;
+}
+
+.filter-btn-container > button > h3,p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.filter-btn-container > button > p{
+    aspect-ratio: square;
+    background-color: gainsboro;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 8px;
+    min-width: 20px;
+}
+
+.active-filter-value{
+    color: black
+}
+
+.todo-main-container {
+    margin: 100px;
+    margin-top: 25px;
+    overflow-y: scroll;
+}
+
+.todo-card{
+    width: 95%;
+    margin: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid gainsboro;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.todo-content-container {
+    width: 100%;
+}
+
+.todo-title {
+    font-size: 25px;
+    color: rgb(12, 73, 178);
+}
+
+.checkbox{
+    width: 20px;
+    border: 2px solid gainsboro;
+    aspect-ratio: 1;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.checkbox-active{
+    border: 2px solid blue;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.completed-todo-title{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.icon-container{
+    display: flex;
+    gap: 8px;
+    color: rgb(43, 98, 226);
+}
+
+.todo-card-header{
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.todo-desc {
+    color: blueviolet;
+    font-size: 18px;
+    padding-right: 5px;
+}
+
+.archive:hover {
+    color: rgb(234, 0, 255);
+}
+
+.edit:hover {
+    color: rgb(30, 255, 0);
+}
+
+.delete:hover {
+    color: rgb(255, 38, 0);
+}
+
+.add-overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.add-task-container{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    position: fixed;
+    /* justify-content: center; */
+    /* display: flex; */
+    /* align-items: center; */
+    z-index: 150;
+    width: min-content;
+    height: min-content;
+    top: 50%;
+    left: 33%;
+    transform: translate(0, -50%);
+}
+
+.add-task-content{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 130%;
+}
+
+.add-form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.add-form > input, 
+.add-form > textarea, 
+.add-form > button{
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    outline-color: rgb(12, 73, 178);
+}
+
+.add-form > button{
+    outline: none;
+    background-color: rgb(12, 73, 178);
+    transition: all 0.3s ease-in-out;
+    color: whitesmoke;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+} 
+
+.add-form > button:active{
+    transform: scale(0.94);
+}
+
+@media screen and (min-width: 480px) {
+    header{
+      background-color: rgb(190, 137, 255);
+    }
+}
